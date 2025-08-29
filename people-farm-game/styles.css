@@ -1,0 +1,13 @@
+body { font-family: sans-serif; background:#d0f0c0; text-align:center; }
+.screen { display:none; }
+.screen.active { display:block; }
+.actions { position:fixed; left:10px; top:10px; }
+.farm { margin-top:50px; }
+.animal { cursor:pointer; display:inline-block; margin:10px; padding:10px; border:1px solid #333; background:#fff; }
+.animal-emoji { font-size:64px; }
+.modal { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.5); display:flex; align-items:center; justify-content:center; }
+.modal.hidden { display:none; }
+.modal-content { background:#fff; padding:20px; border-radius:8px; width:300px; }
+.progress { width:100%; background:#ccc; height:20px; margin:10px 0; }
+#health-bar { background:#0c0; width:0%; height:100%; }
+.close { cursor:pointer; float:right; }
