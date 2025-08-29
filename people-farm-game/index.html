@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>People Farm Helper</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
+    <script defer src="game.js"></script>
+</head>
+<body>
+<div id="screen-welcome" class="screen active">
+    <h1>People Farm Helper</h1>
+    <div class="animal-emoji">🐄</div>
+    <p>Welcome! Help real animals at People Farm India. Connect your wallet to get started.</p>
+    <button id="connect-button">Connect Phantom Wallet</button>
+</div>
+
+<div id="screen-main" class="screen">
+    <div class="actions">
+        <button id="adopt-button">Adopt</button>
+    </div>
+    <div class="farm">
+        <h2>New Arrivals</h2>
+        <div id="new-arrivals"></div>
+        <h2>Ready for Adoption</h2>
+        <div id="adoptable"></div>
+    </div>
+</div>
+
+<div id="animal-popup" class="modal hidden">
+    <div class="modal-content">
+        <span id="close-popup" class="close">&times;</span>
+        <h3 id="animal-name"></h3>
+        <p id="animal-story"></p>
+        <div class="progress">
+            <div id="health-bar"></div>
+        </div>
+        <button id="feed-button"></button>
+        <button id="medicine-button"></button>
+    </div>
+</div>
+
+<div id="adoption-screen" class="screen">
+    <h2>Virtual Adoption Center</h2>
+    <div id="adoption-list"></div>
+    <button id="back-button">Back</button>
+</div>
+</body>
+</html>
